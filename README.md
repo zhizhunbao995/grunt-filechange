@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # grunt-filechange
 
-> change css files background version
+> 改变你的文件版本号
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
@@ -19,45 +18,29 @@ grunt.loadNpmTasks('grunt-filechange');
 ```
 
 ## The "filechange" task
-
 ### Overview
-In your project's Gruntfile, add a section named `filechange` to the data object passed into `grunt.initConfig()`.
+在你的 Gruntfile 文件里, 增加 `filechange`  执行 `grunt.initConfig()`.
 
 ```js
-options.css:  Css to modify the version number change
-src:  Monitor image file
-dest:  generate MD5 image jsonfile
+css:  css文件里边有图片地址 (Css to modify the version number change)
+src: image文件夹 (Monitor image file)
+dest:  生成一个 MD5 图片 json 文件 (generate MD5 image jsonfile)
 grunt.initConfig({
   filechange: {
 		options: {
-		  css:"output/css/min.base.css"
+		  css:"output/css/min.base.css" /*页面中的css*/
 		},
 		files: {
-			'output/imgjson.json': ['v2/images']
+			'output/imgjson.json': ['v2/images'] /*修改过的图片文件夹 和生成一个md5表*/
 		}
   },
 })
 ```
-
 ### Options
-
 #### options.separator
-Type: `String`
-Default value: `',  '`
-
-A string value that is used to do something with whatever.
-
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
-
-A string value that is used to do something else with whatever else.
-
-### Usage Examples
-
+options.css:文件名
+files[json文件]:[图片文件夹]
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
 ```js
 grunt.initConfig({
   filechange: {
@@ -70,32 +53,9 @@ grunt.initConfig({
   },
 })
 ```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  filechange: {
-    options: {
-      css:"**.css"
-      punctuation: ' !!!',
-    },
-    files: {
-      'output/imgjson.json': ['v2/images'],
-    },
-  },
-})
-```
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
 ## Release History
-_(Nothing yet)_
+NPM:https://www.npmjs.org/package/grunt-filechange
 =======
 grunt-filechange
 ================
 
-修改版本号工具,可以修改html，css，js里的版本号工具。
->>>>>>> 9da30dd4dc3315041901812f923bb05f3722486e
