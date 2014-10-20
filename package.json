@@ -1,0 +1,43 @@
+{
+  "name": "grunt-filechange",
+  "description": "change css files background version",
+  "version": "0.1.2",
+  "homepage": "",
+  "author": {
+    "name": "xuanliwei",
+    "email": "116492170@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/i/plugin/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "readme": "# grunt-filechange\r\n\r\n> change css files background version\r\n\r\n## Getting Started\r\nThis plugin requires Grunt `~0.4.1`\r\n\r\nIf you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:\r\n\r\n```shell\r\nnpm install grunt-filechange --save-dev\r\n```\r\n\r\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\r\n\r\n```js\r\ngrunt.loadNpmTasks('grunt-filechange');\r\n```\r\n\r\n## The \"filechange\" task\r\n\r\n### Overview\r\nIn your project's Gruntfile, add a section named `filechange` to the data object passed into `grunt.initConfig()`.\r\n\r\n```js\r\noptions.css:  Css to modify the version number change\r\nsrc:  Monitor image file\r\ndest:  generate MD5 image jsonfile\r\ngrunt.initConfig({\r\n  filechange: {\r\n\t\toptions: {\r\n\t\t  css:\"output/css/min.base.css\"\r\n\t\t},\r\n\t\tfiles: {\r\n\t\t\t'output/imgjson.json': ['v2/images']\r\n\t\t}\r\n  },\r\n})\r\n```\r\n\r\n### Options\r\n\r\n#### options.separator\r\nType: `String`\r\nDefault value: `',  '`\r\n\r\nA string value that is used to do something with whatever.\r\n\r\n#### options.punctuation\r\nType: `String`\r\nDefault value: `'.'`\r\n\r\nA string value that is used to do something else with whatever else.\r\n\r\n### Usage Examples\r\n\r\n#### Default Options\r\nIn this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`\r\n\r\n```js\r\ngrunt.initConfig({\r\n  filechange: {\r\n    options: {\r\n\t\tcss:\"output/css/min.base.css\"\r\n\t},\r\n    files: {\r\n      'output/imgjson.json': ['v2/images'],\r\n    },\r\n  },\r\n})\r\n```\r\n\r\n#### Custom Options\r\nIn this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`\r\n\r\n```js\r\ngrunt.initConfig({\r\n  filechange: {\r\n    options: {\r\n      css:\"**.css\"\r\n      punctuation: ' !!!',\r\n    },\r\n    files: {\r\n      'output/imgjson.json': ['v2/images'],\r\n    },\r\n  },\r\n})\r\n```\r\n\r\n## Contributing\r\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\r\n\r\n## Release History\r\n_(Nothing yet)_\r\n",
+  "readmeFilename": "README.md",
+  "_id": "grunt-filechange@0.1.1",
+  "_from": "grunt-filechange@"
+}
