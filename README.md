@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # grunt-filechange
 
 > change css files background version
@@ -92,3 +93,9 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 _(Nothing yet)_
+=======
+grunt-filechange
+================
+
+修改版本号工具,可以修改html，css，js里的版本号工具。
+>>>>>>> 9da30dd4dc3315041901812f923bb05f3722486e
